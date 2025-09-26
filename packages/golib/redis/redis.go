@@ -10,7 +10,7 @@ type rdb struct {
 	client *redis.Client
 }
 
-func newClient() *rdb {
+func NewClient() *rdb {
 	reddb:=redis.NewClient(&redis.Options{
 		Addr: "localhost:6379",
 	})
